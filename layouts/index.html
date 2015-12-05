@@ -1,0 +1,9 @@
+{{ partial "head.html" . }}
+<main class="home posts">
+  <ul>
+    {{ range .Data.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+  </ul>
+</main>
+{{ partial "foot.html" . }}
