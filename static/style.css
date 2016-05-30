@@ -24,7 +24,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
  }
 
  .yellow {
-   color: #D4C470;
+   color: #F9DD72;
  }
 
  .blue {
@@ -51,12 +51,10 @@ body {
 }
 
 a { 
-  color: #D4C470; 
+  background: #26ADFF;
+  color: #F9DD72; 
+  padding: 0.1em;
   text-decoration: none; 
-}
-
-h1 a {
-  color: #26ADFF;
 }
 
 pre {
@@ -69,10 +67,6 @@ pre {
   margin-bottom: 96px; 
 }
 
-.post h1 a {
-  color: #B72703;
-}
-
 /* HOME */
 .home ul {
   padding: 0;
@@ -80,11 +74,6 @@ pre {
 
 .home li {
   list-style: none;
-}
-
-.home li,
-.home li a {
-  color: #B72703;
 }
 
 /* SINGLE */
