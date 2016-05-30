@@ -1,8 +1,12 @@
 {{ partial "head.html" . }}
-<main class="home posts">
-  <ul>
+{{ partial "description.html" . }}
+<main class="home section">
+  <ul class="posts">
     {{ range .Data.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    <li>
+      <a href="{{ .Permalink }}">{{ .Title }}</a>
+      <time datetime="{{ .Date.Format "2006-01-30" }}">{{ .Date.Format "Jan 01, 2006" }}</time>
+    </li>
     {{ end }}
   </ul>
 </main>
